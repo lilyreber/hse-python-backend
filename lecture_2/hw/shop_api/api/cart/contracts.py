@@ -8,6 +8,7 @@ from lecture_2.hw.shop_api.store.models import (
     CartEntity, ItemInCart,
 )
 
+
 class CartResponse(BaseModel):
     id: int
     items: List[ItemInCart] = field(default_factory=list)
@@ -21,4 +22,3 @@ class CartResponse(BaseModel):
 
 class CartRequest(BaseModel):
     id: int
-

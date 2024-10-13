@@ -6,5 +6,5 @@ class ItemRequest(BaseModel):
     price: float = None
 
     model_config = {
-        "extra" : "forbid"
+        "extra": "forbid"
     }
